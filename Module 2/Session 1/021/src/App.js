@@ -13,16 +13,19 @@ function App() {
               <img src={album.images[2].url} />
           </td>
           <td>
-              <tr>
                   <td>
                      <h2>{album.name}</h2>
                   </td>
-              </tr>
           <tr>
         <td>
           <h3>{artists[0].name}</h3>
           </td>
         </tr>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button className="btn-select">Select</button>
           </td>
         </tr>
       </table>
@@ -38,6 +41,14 @@ function App() {
           padding:10px;
           width:100%;
           margin:0px 10px 0 10px;
+        }
+        .btn-select{
+          padding:20px;
+          border:none;
+          border-radius:10px;
+          text-transform:uppercase;
+          cursor:pointer;
+          background-color:blue;
         }
         `}
       </style>
