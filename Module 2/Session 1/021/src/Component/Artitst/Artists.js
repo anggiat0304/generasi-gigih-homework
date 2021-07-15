@@ -2,10 +2,10 @@ import React from 'react'
 import data from '../../data'
 
 function Artists() {
-    const Artists = data
+    const artists = data
     return (
         <div>
-            {Artists.name[0]}
+            {artists.name}
         </div>
     )
 }
